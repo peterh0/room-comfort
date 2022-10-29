@@ -9,7 +9,7 @@ In browser screenshot:
 
 .. image:: screenshot.png
   :width: 800
-  :alt: Alternative text
+  :alt: Screenshot
 
 Requirements
 ============
@@ -40,3 +40,9 @@ Run following in terminal:
 .. code-block::
 
   bash run_temp_hum.sh
+  
+To edit sensor sampling frequency, edit line 8 in humidity.py:
+
+.. code-block:: python
+
+    sample_freq = 15*60 # seconds * 60 = minutes
