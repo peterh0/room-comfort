@@ -7,8 +7,8 @@ Temperature and humidity live visualization in browser using Raspberry Pi.
 
 In browser screenshot:
 
-.. image:: path/filename.png
-  :width: 400
+.. image:: screenshot.png
+  :width: 800
   :alt: Alternative text
 
 Requirements
