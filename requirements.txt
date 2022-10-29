@@ -1,0 +1,5 @@
+adafruit-circuitpython-dht
+flask
+matplotlib
+sqlite3
+
