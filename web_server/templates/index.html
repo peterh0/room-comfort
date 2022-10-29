@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>DHT Sensor data </title>
+        <link rel="stylesheet" href='../static/style.css'/>
+    </head>
+    <body>
+        <h1>Most Recent Sensor Data</h1>
+        <p> Last refreshed: {{ time }} <br><br><a href="/"class="button">Refresh</a></p>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th style="width:50%">Temperature</th>
+                <th>Humidity</th>
+            </tr>
+            <tr style="text-align:center; font-size:60px">
+                <td>{{temp}}°C</td>
+                <td>{{hum}}%</td>
+            </tr>
+        </table>
+        <br>
+        <h1>Historical Data</h1>
+        <img src="/plot/temp" alt="Image Placeholder" width="49%">
+        <img src="/plot/hum" alt="Image Placeholder" width="49%">
+        <br>
+        <form method="POST">
+            <label style="font-size: 12px">Number of samples to retrieve:</label>
+        	<input name="num_samples" value= {{numSamples}}>
+        	<input type="submit">
+        </form>
+    </body>
+</html>
